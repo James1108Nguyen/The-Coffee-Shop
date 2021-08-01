@@ -1,0 +1,269 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inconsolata", sans-serif;
+    height: 100%;
+    font-size: 15px;
+}
+img {
+    width: 100%;
+}
+
+
+/* Commom Classes */
+.text-center {
+    text-align: center !important;
+}
+
+.letter-speacing {
+    letter-spacing: 4px;
+}
+
+.color-gray {
+    color: #757575 !important;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tag {
+    background: #000;
+    color: #fff;
+    padding: 0 8px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    /* width: fit-content; Dùng cho cùng 1 thẻ => magrin 0 auto */
+    display: inline-block; /* Dùng cho 2 thẻ ( thẻ cha dùng textalignCenter */
+    line-height: 27px;
+}
+
+.pd0 {
+    padding: 0 !important;
+}
+
+.pd64 {
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+}
+.pd48 {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+}
+
+.mg0{
+    margin: 0 !important;
+}
+
+.heading {
+    margin-top: 10px!important;
+    margin-bottom: 10px!important;
+}
+
+.displayBlock {
+    display: block !important;
+}
+
+.clickGray {
+    background-color: #616161!important;
+    color: #fff !important;
+}
+/* --------------- */
+
+.row {
+
+}
+
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+}
+.col-half {
+    width: 50%;
+}
+
+.col-four {
+    width: 25%;
+}
+
+/* Css */
+#header {
+    background: #000;
+    width: 100%;
+    height: 54px;
+    padding: 8px 16px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+ .nav {
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    line-height: 38px;
+}
+
+.nav a:hover {
+    background-color: #ccc;  
+    color: #000;  
+}
+
+
+#slider {
+    position: relative;
+    color: #fff;
+    background: no-repeat center / cover
+        url(../img/coffeehouse.jpeg);
+    padding-top: 34%;
+    filter: grayscale(0.5);
+}
+
+
+#slider .slider-heading{
+    position: absolute;
+    font-size: 90px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 135px;    
+}
+
+#slider .slider-open {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 12px 24px;
+    display: inline-block;
+}
+
+
+#slider .slider-open p {
+    background-color: #000;
+    padding: 0 8px;
+}
+
+
+#slider .slider-address p,
+#slider .slider-open p {
+    line-height: 22px;
+ }
+
+#slider .slider-address {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 12px 24px;
+    display: inline-block;
+}
+
+
+#content {
+    font-size: 18px;
+    background-color: #fdf5e6;
+    filter: grayscale(75%);
+}
+
+#footer  p,
+#content p{
+    margin: 18px 0;
+    line-height: 27px;
+}
+
+.content-section {
+    width: 700px;
+    margin: 0 auto;
+}
+
+
+#about-section .hight-para{
+    background-color: #f1f1f1;
+    border-left: 6px solid #ccc;
+    padding: 0.1px 0;
+    margin: 16px 0;
+}
+#about-section .hight-para p{
+    padding: 0 16px;
+}
+
+#about-section .opening{
+
+}
+#about-section .address{
+
+}
+
+#about-section img {
+    margin-top: 16px;
+}
+
+.body-menu,
+.header-menu {
+    box-shadow: rgb(0 0 0 / 35%) 2px 2px 8px
+}
+.header-menu {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.menu-eat,
+.menu-drink {
+    padding: 48px 16px;
+    display: none;
+}
+
+.body-menu .item-name {
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+#menu-section img {
+    margin-top: 32px;
+}
+
+#where-section .form-control {
+    font-family: "Inconsolata", sans-serif;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    padding: 16px 8px;
+    width: 100%;
+    line-height: 27px;
+    margin: 18px 0;
+    display: block;
+}
+
+
+#where-section .send-btn {
+    padding: 8px 16px;
+    border: none;
+    margin-bottom: 48px ;
+}
+#where-section .send-btn:hover {
+    cursor: pointer;
+    background: #ccc;
+    color: #000;
+}
+
+
+
+#footer {
+    background-color: #f1f1f1;
+    color: #000;
+    padding: 48px 0;
+    text-align: center;
+    font-size: 18px;
+}
